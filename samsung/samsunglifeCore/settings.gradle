@@ -1,3 +1,0 @@
-rootProject.name = 'samsunglifeCore'
-include ":samsunglifeParent"
-project(":samsunglifeParent").projectDir = file("../samsunglifeParent")
