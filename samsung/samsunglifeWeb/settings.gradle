@@ -1,0 +1,3 @@
+rootProject.name = 'samsunglifeWeb'
+include ":samsunglifeParent"
+project(":samsunglifeParent").projectDir = file("../samsunglifeParent")

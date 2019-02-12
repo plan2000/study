@@ -1,0 +1,24 @@
+spring: 
+  session: 
+    timeout: 1
+    store-type: redis
+    redis: 
+      flush-mode: on-save
+      namespace: samsung.session
+  mvc:
+      view:
+          prefix: /WEB-INF/views/
+          suffix: .jsp
+mybatis:
+    type-aliases-package: com.samsunglife.sample.model
+    mapper-locations: mybatis/mapper/**/*.xml
+    configuration:
+        default-scripting-language: com.samsunglife.sample.core.db.EnhanceMybatisLanguageDriver
+
+
+   
+        
+        
+        
+     
+                  

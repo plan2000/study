@@ -1,0 +1,35 @@
+spring: 
+  session: 
+    timeout: 10
+    store-type: redis
+    redis: 
+      flush-mode: on-save
+      namespace: samsung.session
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: test
+    password: test
+    platform: mysql
+    connectionProperties: useSSL=false;useUnicode=yes;characterEncoding=UTF-8;serverTimezone=UTC
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-active: 7
+        max-idle: 7
+        min-idle: 2
+        max-wait: -1ms
+server: 
+  port: 8080
+  session-timeout: 1
+  session:
+    timeout: 5000
+    cookie: 
+      max-age: 5000 
+  servlet: 
+    session: 
+      timeout: 1
+     
